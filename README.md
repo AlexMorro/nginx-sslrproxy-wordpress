@@ -1,4 +1,4 @@
-# Dockerized NGINX as ssl reverse proxy with a default wordpress installation
+# Dockerized NGINX as reverse proxy with SSL and a default Wordpress installation
 ## Docker compose
 Default wordpress config for docker-compose from docker hub.
 
