@@ -2,14 +2,14 @@
 ## Docker compose
 Default wordpress config for docker-compose from docker hub.
 
-Added nginx:
-  - port forwarding 80 and 443
-  - add volumes for configuration file, ssl certificate and ssl key.
+Added NGINX:
+  - Port forwarding 80 and 443
+  - Add volumes for configuration file, ssl certificate and ssl key.
 
 ## NGINX configuration file (default.conf)
 One server block for redirecting http to https.
 
-The other server block listens for port 443 with ssl, specifies the certificate, and the location block for redirecting to the wordpress server and set the headers to forward to the wordpress server.
+The other server block listens for port 443 with SSL, specifies the certificate, and the location block for redirecting to the wordpress server and set the headers to forward to the wordpress server.
 
 It doesn’t need any IP because the internal docker DNS does the job.
 
