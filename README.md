@@ -14,10 +14,7 @@ The other server block listens for port 443 with ssl, specifies the certificate,
 It doesn’t need any IP because the internal docker DNS does the job.
 
 
-### Created my own certificate using openssl
-```
-    openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout cert.key -out cert.crt
-```
+I created my own certificate using openssl
 
 # Start the app stack
 You just need the docker-compose.yml and the nginx folder with the config file and the certificate and key inside the folder ssl. Then with docker compose up it’s up and running.
